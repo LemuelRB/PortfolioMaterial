@@ -1,0 +1,5 @@
+# MySQL connection parameters
+mysql_host: 'localhost'
+mysql_user: 'root'
+mysql_password: 'Pythonqa_1994'
+mysql_db: 'security'

@@ -1,0 +1,44 @@
+<h1>Queried Data</h1>
+<style>
+table {
+  width:40%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+h1 {
+ font-size:50px;
+ color:red;
+ text-align:center;
+}
+</style>
+<br>
+<center>
+<table id="t01">
+   <th>User ID</th><th>Role ID</th> <th>Account Name</th><th>Role Name</th><th>Operation</th>
+    {% for q8 in userDetails %}
+    <tr>
+        <td> {{q8[0]}} </td>
+        <td> {{q8[1]}} </td>
+        <td> {{q8[2]}} </td>
+        <td> {{q8[3]}} </td>
+        <td> {{q8[4]}} </td>
+    </tr>
+    {% endfor %}
+</table>
+</center>

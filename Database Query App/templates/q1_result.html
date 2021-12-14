@@ -1,0 +1,44 @@
+<h1>Inserted Data</h1>
+<style>
+table {
+  width:40%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+h1 {
+ font-size:50px;
+ color:red;
+ text-align:center;
+}
+</style>
+<br>
+<center>
+<table border = 1>
+    <th>ID Number</th><th>Name</th><th>Email</th><th>Role Number</th>
+    {% for q1 in dataDetails %}
+    <tr>
+        <td> {{q1[0]}} </td>
+        <td> {{q1[1]}} </td>
+        <td> {{q1[2]}} </td>
+        <td> {{q1[3]}} </td>
+    </tr>
+    {% endfor %}
+</table>
+</center>
+
