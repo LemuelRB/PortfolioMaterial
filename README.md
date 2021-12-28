@@ -1,0 +1,1 @@
+This was a project done for Database Systems I at the University of Texas at Arlington. The front end development was focused on by Moulin Chandrakant Jariwala while the back end was focused on by me.
